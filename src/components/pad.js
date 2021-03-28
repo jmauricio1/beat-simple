@@ -7,7 +7,7 @@ function Pad(props) {
       className="single-pad"
       style={{ backgroundColor: props.color }}
     >
-      <p>{props.text}</p>
+      <p>{props.text} <br/>{props.desc}</p>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { Col } from "react-bootstrap";
 
 function Title() {
   return (
-    <Col className="left-column" lg={6}>
+    <Col className="left-column" xlg={6}>
         <div className="rect">
 
         </div>

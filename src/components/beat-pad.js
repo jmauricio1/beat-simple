@@ -62,7 +62,7 @@ function theSound(theKey) {
 
 function BeatPad() {
   return (
-    <Col className="right-column" lg={6}>
+    <Col className="right-column" xlg={6}>
       <div className="beat-pad-grid">
         {padInfo.map((item) => {
           return (
@@ -72,6 +72,7 @@ function BeatPad() {
               text={item.buttonKey}
               color={item.color}
               onClick={playSound}
+              desc={item.desc}
             ></Pad>
           );
         })}

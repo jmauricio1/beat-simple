@@ -1,75 +1,156 @@
-body{
-    background-color: black;
-    color: white;
+body {
+  background-color: black;
+  color: white;
 }
 
-h1{
-    font-family: "Source Code Pro";
-    font-weight: 700;
-    font-size: 10rem;
-    line-height: 8rem;
-    padding-top: 15rem;
-    position: relative;
+h1 {
+  font-family: "Source Code Pro";
+  font-weight: 700;
+  font-size: 10rem;
+  line-height: 8rem;
+  padding-top: 15rem;
+  position: relative;
 }
 
-p{
-    font-family: "Poppins";
+p {
+  font-family: "Poppins";
 }
 
 hr {
-    width: 100%;
-    background-color: white;
-    height: 5px;
+  width: 100%;
+  background-color: white;
+  height: 5px;
+}
+
+.column-spacing {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.left-column {
+  padding-left: 192px;
+}
+
+.title-desc {
+  padding-top: 2.5rem;
+  padding-left: 12.5rem;
+}
+
+.text-black {
+  color: black;
+}
+
+.rect {
+  position: fixed;
+  background-color: white;
+  left: 0;
+  width: 380px;
+  height: 100vh;
+}
+
+.beat-pad-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 1rem;
+  column-gap: 1rem;
+  width: 40vw;
+  height: 20vw;
+  margin-top: 232px;
+  margin-left: 5%;
+  background: linear-gradient(135deg, #606060, #131313);
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.single-pad {
+  border-radius: 15px;
+}
+
+.single-pad p {
+  position: relative;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  color: black;
+  font-weight: bold;
+}
+
+@media (max-width: 1375px) {
+  h1 {
+    padding-top: 5rem;
   }
 
-.column-spacing{
-    padding-left: 5%;
-    padding-right: 5%;
+  .beat-pad-grid {
+    margin: auto;
+    margin-top: 2.5rem;
+    width: 50vw;
+    height: 25vw;
+  }
 }
 
-.left-column{
-    padding-left: 10%;
+@media (max-width: 1024px) {
+  .rect {
+    width: 250px;
+  }
+
+  .left-column {
+    padding-left: 62px;
+    padding-right: 62px;
+  }
+
+  .beat-pad-grid {
+    width: 70vw;
+    height: 35vw;
+  }
 }
 
-.title-desc{
-    padding-top: 2.5rem;
-    padding-left: 12.5rem;
+@media (max-width: 795px){
+    h1{
+        font-size: 6rem;
+        line-height: 5rem;
+    }
+
+    .rect{
+        width: 175px;
+    }
+
+    .title-desc{
+        padding-top: 0;
+        padding-left: 8rem;
+    }
+
+    .beat-pad-grid{
+        width: 90vw;
+        height: 45vw;
+    }
 }
 
-.text-black{
-    color: black;
-}
+@media (max-width: 480px) {
+  h1 {
+      font-size: 5rem;
+      line-height: 4rem;
+  }
 
-.rect{
-    position: absolute;
-    background-color: white;
-    left: 0;
-    width: 40%;
-    height: 100vh;
-}
+  .left-column {
+    padding-right: 1rem;
+  }
 
-.beat-pad-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 1rem;
-    column-gap: 1rem;
-    width: 40vw;
-    height: 20vw;
-    margin-top: 10%;
-    margin-left: 5%;
-    background: linear-gradient(135deg, #606060, #131313);
-    padding: 1rem;
-    border-radius: 15px;
-}
+  .rect{
+      width: 156px;
+  }
 
-.single-pad{
-    border-radius: 15px;
-}
+  .title-desc{
+      padding-left: 7rem;
+      padding-top: 0;
+  }
 
-.single-pad p{
-    position: relative;
-    padding-left: 1rem;
-    padding-top: 1rem;
-    color: black;
-    font-weight: bold;
+  .beat-pad-grid{
+      width: 90vw;
+      height: 90vh;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 3rem;
+  }
+
+  p{
+      font-size: 1rem;
+  }
 }
